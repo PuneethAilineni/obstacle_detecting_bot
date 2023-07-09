@@ -59,6 +59,8 @@ void loop()
   lcd.setCursor(0,1);
   lcd.print(distance);
   lcd.print(" IN CM");
+  delay(500);
+  lcd.clear();
   
   analogWrite(mSpeed,mSpeedVal);
   digitalWrite(dir1,HIGH);
